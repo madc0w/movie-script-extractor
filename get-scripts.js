@@ -69,6 +69,7 @@ let browser;
 		}
 	}
 	console.log('done.');
+	process.exit();
 })();
 
 async function getScript(movieName) {

@@ -1,1 +1,2 @@
-node ../get-scripts.js
+@REM node ../get-scripts.js
+node ../search.js
