@@ -1,0 +1,129 @@
+https://imsdb.com/scripts/25th-Hour.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/A.I..html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Batman-and-Robin.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Batman-Begins.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Batman-Forever.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Batman-Returns.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Bourne-Supremacy,-The.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Casablanca.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Catwoman.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Collateral.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Contact.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Dark-Knight,-The.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Donnie-Darko.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/El-Mariachi.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Executive-Decision.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Eyes-Wide-Shut.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Full-Metal-Jacket.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Fury.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Get-Shorty.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Ginger-Snaps.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Goodfellas.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Harry-Potter-and-the-Chamber-of-Secrets.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Harry-Potter-and-the-Deathly-Hallows-Part-1.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Harry-Potter-and-the-Goblet-of-Fire.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Harry-Potter-and-the-Half-Blood-Prince.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Harry-Potter-and-the-Prisoner-of-Azkaban.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Harry-Potter-and-the-Sorcerer's-Stone.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Incredibles,-The.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Innerspace.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Lethal-Weapon.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Lethal-Weapon-4.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Matchstick-Men.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Napoleon-Dynamite.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/O-Brother-Where-Art-Thou?.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Outbreak.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Rushmore.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Star-Wars-Revenge-of-the-Sith.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Troy.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Unforgiven.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Valentine's-Day.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Village,-The.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/What-About-Bob?.html
+Error: Error: failed to find element matching selector "pre"
+
+https://imsdb.com/scripts/Who-Framed-Roger-Rabbit?.html
+Error: Error: failed to find element matching selector "pre"
+
