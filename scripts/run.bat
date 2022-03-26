@@ -1,1 +1,1 @@
-node ../server.js
+node ../get-scripts.js
