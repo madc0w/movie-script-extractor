@@ -1,0 +1,31 @@
+{
+  "name": "puppeteer-server",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madc0w/puppeteer-server.git"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1064.0",
+    "express": "^4.17.2",
+    "node-fetch": "^2.6.7",
+    "puppeteer": "^13.1.2"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Marc A. Donis",
+  "bugs": {
+    "url": "https://github.com/madc0w/puppeteer-server/issues"
+  },
+  "homepage": "https://github.com/madc0w/puppeteer-server#readme",
+  "license": "ISC",
+  "description": ""
+}
