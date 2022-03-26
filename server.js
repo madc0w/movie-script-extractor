@@ -7,6 +7,10 @@ const path = require('path');
 
 const outDir = __dirname + '/out';
 
+const failFile = path.resolve(outDir, 'failures.txt');
+const failFileStream = fs.createWriteStream(failFile);
+
+let browser;
 (async () => {
 	// see https://pptr.dev/#?product=Puppeteer&version=v8.0.0&show=api-class-browserfetcher
 	// can't find any mysterious "revsion number" that actually exists. oh well.
@@ -15,13 +19,10 @@ const outDir = __dirname + '/out';
 	// console.log('browserFetcher', browserFetcher);
 	// const revisionInfo = await browserFetcher.download(991159);
 	// console.log('revisionInfo', revisionInfo);
-	const browser = await puppeteer.launch({
+	browser = await puppeteer.launch({
 		args: ['--no-sandbox'],
 		// executablePath: revisionInfo.executablePath,
 	});
-
-	const failFile = path.resolve(outDir, 'failures.txt');
-	const failFileStream = fs.createWriteStream(failFile);
 
 	try {
 		const page = await browser.newPage();
@@ -35,35 +36,12 @@ const outDir = __dirname + '/out';
 		});
 		const hrefs = await page.$$eval('p a', el => el.map(e => e.getAttribute('href')));
 		for (const href of hrefs) {
-			// console.log('href', href);
 			const movieName = href
 				.substring('/Movie Scripts/'.length) //
 				.replaceAll(':', '')
+				.replaceAll('?', '')
 				.replace(' Script.html', '.html');
-			const scriptLink = `https://imsdb.com/scripts/${movieName.replaceAll(' ', '-')}`;
-			console.log(`getting ${scriptLink} ...`);
-
-			try {
-				const page2 = await browser.newPage();
-				await page2.goto(scriptLink, {
-					waitUntil: 'load',
-					timeout: pageLoadTimeoutSecs * 1000,
-				});
-				const scriptText = await page2.$eval('pre', el => el.innerText);
-				// console.log(scriptText);
-
-				const outfile = path.resolve(outDir, movieName.replace('.html', '.txt'));
-				const fileStream = fs.createWriteStream(outfile);
-				fileStream.write(scriptText);
-				fileStream.close();
-				page2.close();
-			} catch (err) {
-				console.error('failed to get script', err);
-				failFileStream.write(scriptLink + '\n');
-				failFileStream.write(err + '\n');
-				failFileStream.write('\n');
-			}
-
+			getScript(movieName);
 			// console.log('***************************');
 		}
 		failFileStream.close();
@@ -72,6 +50,31 @@ const outDir = __dirname + '/out';
 		console.error(err);
 	}
 })();
+
+async function getScript(movieName) {
+	const scriptLink = `https://imsdb.com/scripts/${movieName.replaceAll(' ', '-')}`;
+	console.log(`getting ${scriptLink} ...`);
+	try {
+		const page = await browser.newPage();
+		await page.goto(scriptLink, {
+			waitUntil: 'load',
+			timeout: pageLoadTimeoutSecs * 1000,
+		});
+		const scriptText = await page.$eval('pre', el => el.innerText);
+		// console.log(scriptText);
+
+		const outfile = path.resolve(outDir, movieName.replace('.html', '.txt'));
+		const fileStream = fs.createWriteStream(outfile);
+		fileStream.write(scriptText);
+		fileStream.close();
+		page.close();
+	} catch (err) {
+		console.error('failed to get script', err);
+		failFileStream.write(scriptLink + '\n');
+		failFileStream.write(err + '\n');
+		failFileStream.write('\n');
+	}
+}
 
 // const express = require('express');
 // const server = express();
