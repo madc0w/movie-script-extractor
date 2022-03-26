@@ -1,6 +1,19 @@
+const movieNames = [
+	'25th Hour',
+	'Bourne Supremacy, The',
+	'Catwoman',
+	'Collateral',
+	'El Mariachi',
+	'Get Shorty',
+	'Incredibles, The',
+	'Rushmore',
+	'Star Wars Revenge of the Sith',
+	'Village, The',
+];
+
 const pageLoadTimeoutSecs = 16;
 
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
@@ -24,31 +37,38 @@ let browser;
 		// executablePath: revisionInfo.executablePath,
 	});
 
-	try {
-		const page = await browser.newPage();
-		await page.goto('https://imsdb.com/all-scripts.html', {
-			waitUntil: 'load',
-			timeout: pageLoadTimeoutSecs * 1000,
-		});
-		await page.waitForNetworkIdle({
-			timeout: 30 * 1000,
-			idleTime: 2 * 1000,
-		});
-		const hrefs = await page.$$eval('p a', el => el.map(e => e.getAttribute('href')));
-		for (const href of hrefs) {
-			const movieName = href
-				.substring('/Movie Scripts/'.length) //
-				.replaceAll(':', '')
-				.replaceAll('?', '')
-				.replace(' Script.html', '.html');
-			getScript(movieName);
-			// console.log('***************************');
+	if (movieNames) {
+		for (const movieName of movieNames) {
+			await getScript(movieName + '.html');
 		}
-		failFileStream.close();
-		page.close();
-	} catch (err) {
-		console.error(err);
+	} else {
+		try {
+			const page = await browser.newPage();
+			await page.goto('https://imsdb.com/all-scripts.html', {
+				waitUntil: 'load',
+				timeout: pageLoadTimeoutSecs * 1000,
+			});
+			await page.waitForNetworkIdle({
+				timeout: 30 * 1000,
+				idleTime: 2 * 1000,
+			});
+			const hrefs = await page.$$eval('p a', el => el.map(e => e.getAttribute('href')));
+			for (const href of hrefs) {
+				const movieName = href
+					.substring('/Movie Scripts/'.length) //
+					.replaceAll(':', '')
+					.replaceAll('?', '')
+					.replace(' Script.html', '.html');
+				getScript(movieName);
+				// console.log('***************************');
+			}
+			failFileStream.close();
+			page.close();
+		} catch (err) {
+			console.error(err);
+		}
 	}
+	console.log('done.');
 })();
 
 async function getScript(movieName) {
@@ -60,10 +80,15 @@ async function getScript(movieName) {
 			waitUntil: 'load',
 			timeout: pageLoadTimeoutSecs * 1000,
 		});
-		const scriptText = await page.$eval('pre', el => el.innerText);
-		// console.log(scriptText);
-
-		const outfile = path.resolve(outDir, movieName.replace('.html', '.txt'));
+		let scriptText;
+		try {
+			scriptText = await page.$eval('pre', el => el.innerText);
+			// console.log(scriptText);
+		} catch (err) {
+			// look for <td class="scrtext"> instead
+			scriptText = await page.$eval('td.scrtext', el => el.innerText);
+		}
+		const outfile = path.resolve(outDir + '/scripts', movieName.replace('.html', '.txt'));
 		const fileStream = fs.createWriteStream(outfile);
 		fileStream.write(scriptText);
 		fileStream.close();
