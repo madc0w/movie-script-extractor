@@ -11,7 +11,7 @@ process.stdin.on('data', async input => {
 	input = input.toString();
 	let words = input.split(/\s+/);
 	words.pop();
-	// words.push('000000000000');
+	words.push('000000000000');
 
 	do {
 		let foundWords = [];
@@ -54,13 +54,17 @@ process.stdin.on('data', async input => {
 			// console.log(script);
 		}
 
-		console.log(
-			`found "${foundWords.join(' ')}" in ${foundInFile} at index ${foundIndex}/${foundInScript.length} (${((100 * foundIndex) / foundInScript.length).toFixed(1)}%)`
-		);
+		if (foundInScript) {
+			console.log(
+				`found "${foundWords.join(' ')}" in ${foundInFile} at index ${foundIndex}/${foundInScript.length} (${((100 * foundIndex) / foundInScript.length).toFixed(1)}%)`
+			);
+		} else {
+			console.log('nothing else found!');
+		}
 		words = words.splice(foundWords.length);
 		// console.log(words);
 	} while (words.length > 1);
 
-	console.log('done.');
-	process.exit();
+	// console.log('done.');
+	// process.exit();
 });
