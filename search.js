@@ -18,7 +18,6 @@ process.stdin.on('data', async input => {
 		excludeFiles = excludeFiles.concat(await search(input, excludeFiles));
 		console.log();
 	} while (excludeFiles.length > prevNumExcludeFiles);
-	outFileStream.close();
 	console.log('Enter some text to search for:');
 });
 
