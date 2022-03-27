@@ -1,0 +1,104 @@
+you know i am
+American, The.txt
+65.4%
+
+something of a
+12 Years a Slave.txt
+58.1%
+
+scientist
+10 Things I Hate About You.txt
+13.2%
+
+myself
+10 Things I Hate About You.txt
+63.3%
+
+you know i am
+Anonymous.txt
+27.3%
+
+something of a
+44 Inch Chest.txt
+60.6%
+
+scientist
+12 Monkeys.txt
+5.5%
+
+myself
+12 and Holding.txt
+5.1%
+
+you know i am
+Danish Girl, The.txt
+9.8%
+
+something of a
+8MM.txt
+6.6%
+
+scientist
+187.txt
+14.1%
+
+myself
+12.txt
+4.7%
+
+you know i am
+Django Unchained.txt
+81.7%
+
+something of a
+Airplane 2 The Sequel.txt
+40.3%
+
+scientist
+2012.txt
+19.0%
+
+myself
+127 Hours.txt
+10.7%
+
+you know i am
+English Patient, The.txt
+13.0%
+
+something of a
+Arsenic and Old Lace.txt
+48.8%
+
+scientist
+28 Days Later.txt
+1.9%
+
+myself
+1492 Conquest of Paradise.txt
+5.5%
+
+you know i am
+JFK.txt
+42.0%
+
+something of a
+As Good As It Gets.txt
+26.0%
+
+scientist
+30 Minutes or Less.txt
+99.3%
+
+myself
+17 Again.txt
+35.9%
+
+you know i am
+Ninotchka.txt
+85.9%
+
+something of a
+Bachelor Party, The.txt
+31.1%
+
