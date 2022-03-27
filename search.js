@@ -1,14 +1,29 @@
 const fs = require('fs');
-// const path = require('path');
+const path = require('path');
 
 const outDir = __dirname + '/out/';
 const inDir = __dirname + '/out/scripts/';
 // const inDir = __dirname + '/out/test/';
 
-// const testFile = 'A Few Good Men.txt';
+console.log('Enter some text to search for:');
 
 process.stdin.on('data', async input => {
 	input = input.toString();
+	let excludeFiles = [];
+	let prevNumExcludeFiles;
+	let i = 0;
+	do {
+		console.log(`Pass ${++i}:`);
+		prevNumExcludeFiles = excludeFiles.length;
+		excludeFiles = excludeFiles.concat(await search(input, excludeFiles));
+		console.log();
+	} while (excludeFiles.length > prevNumExcludeFiles);
+	outFileStream.close();
+	console.log('Enter some text to search for:');
+});
+
+async function search(input, excludeFiles) {
+	const foundInFiles = [];
 	let words = input.split(/\s+/);
 	words.pop();
 	words.push('000000000000');
@@ -17,9 +32,9 @@ process.stdin.on('data', async input => {
 		let foundWords = [];
 		let foundInFile, foundIndex, foundInScript;
 		for (const file of await fs.readdirSync(inDir)) {
-			// if (file != testFile) {
-			// 	continue;
-			// }
+			if (excludeFiles && excludeFiles.includes(file)) {
+				continue;
+			}
 			const script = fs.readFileSync(inDir + file).toString();
 			// console.log(script);
 			const cumulatedWords = [];
@@ -38,7 +53,7 @@ process.stdin.on('data', async input => {
 						cumulatedWords.pop();
 					}
 					if (cumulatedWords.length > foundWords.length) {
-						foundWords = JSON.parse(JSON.stringify(cumulatedWords));
+						foundWords = cumulatedWords;
 						// if (foundWords.length == 3) {
 						// 	console.log(foundWords);
 						// }
@@ -55,16 +70,21 @@ process.stdin.on('data', async input => {
 		}
 
 		if (foundInScript) {
-			console.log(
-				`found "${foundWords.join(' ')}" in ${foundInFile} at index ${foundIndex}/${foundInScript.length} (${((100 * foundIndex) / foundInScript.length).toFixed(1)}%)`
-			);
+			const percent = ((100 * foundIndex) / foundInScript.length).toFixed(1);
+			console.log(`Found "${foundWords.join(' ')}" in ${foundInFile} at index ${foundIndex}/${foundInScript.length} (${percent}%)`);
+			const outFile = path.resolve(outDir + 'search-results', `${input.trim()}.txt`);
+			fs.appendFileSync(outFile, foundWords.join(' ') + '\n');
+			fs.appendFileSync(outFile, foundInFile + '\n');
+			fs.appendFileSync(outFile, percent + '%\n');
+			fs.appendFileSync(outFile, '\n');
+			foundInFiles.push(foundInFile);
 		} else {
-			console.log('nothing else found!');
+			console.log('Nothing else found!');
+			break;
 		}
 		words = words.splice(foundWords.length);
 		// console.log(words);
 	} while (words.length > 1);
 
-	// console.log('done.');
-	// process.exit();
-});
+	return foundInFiles;
+}
