@@ -23,6 +23,7 @@ process.stdin.on('data', async input => {
 
 async function search(input, excludeFiles) {
 	const foundInFiles = [];
+	input = input.replaceAll(/[^a-z0-9']/gi, ' ');
 	let words = input.split(/\s+/);
 	words.pop();
 	words.push('000000000000');

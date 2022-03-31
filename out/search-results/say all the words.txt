@@ -1,0 +1,320 @@
+say all the words
+Cinema Paradiso.txt
+47.4%
+
+say all the
+Coriolanus.txt
+14.3%
+
+words
+10 Things I Hate About You.txt
+58.6%
+
+say all
+Adjustment Bureau, The.txt
+12.8%
+
+the words
+12 and Holding.txt
+3.0%
+
+say all
+Amadeus.txt
+83.7%
+
+the words
+12 Monkeys.txt
+5.4%
+
+say all
+American Madness.txt
+96.2%
+
+the words
+1492 Conquest of Paradise.txt
+0.9%
+
+say all the words
+Cinema Paradiso.txt
+47.4%
+
+say all the
+Coriolanus.txt
+14.3%
+
+words
+10 Things I Hate About You.txt
+58.6%
+
+say all
+Adjustment Bureau, The.txt
+12.8%
+
+the words
+12 and Holding.txt
+3.0%
+
+say all
+Amadeus.txt
+83.7%
+
+the words
+12 Monkeys.txt
+5.4%
+
+say all
+American Madness.txt
+96.2%
+
+the words
+1492 Conquest of Paradise.txt
+0.9%
+
+say all
+Arcade.txt
+7.8%
+
+the words
+15 Minutes.txt
+0.0%
+
+say all
+Being John Malkovich.txt
+15.7%
+
+the words
+187.txt
+99.5%
+
+say all
+Birds, The.txt
+68.4%
+
+the words
+2012.txt
+17.0%
+
+say all
+Broadcast News.txt
+91.0%
+
+the words
+25th Hour.txt
+71.2%
+
+say all
+Citizen Kane.txt
+59.4%
+
+the words
+28 Days Later.txt
+67.1%
+
+say all
+Dear White People.txt
+95.9%
+
+the words
+42.txt
+28.3%
+
+say all
+Election.txt
+23.2%
+
+the words
+9.txt
+66.9%
+
+say all
+Fargo.txt
+26.8%
+
+the words
+A Few Good Men.txt
+49.3%
+
+say all
+Hangover, The.txt
+8.1%
+
+the words
+A Scanner Darkly.txt
+93.0%
+
+say all
+Hard Rain.txt
+55.3%
+
+the words
+A Serious Man.txt
+67.0%
+
+say all
+Hesher.txt
+89.3%
+
+the words
+Absolute Power.txt
+45.7%
+
+say all
+I Still Know What You Did Last Summer.txt
+11.1%
+
+the words
+Abyss, The.txt
+12.5%
+
+say all
+Lincoln.txt
+9.8%
+
+the words
+Agnes of God.txt
+1.5%
+
+say all
+Made.txt
+77.3%
+
+the words
+Aladdin.txt
+53.8%
+
+say all
+Midnight Cowboy.txt
+54.2%
+
+the words
+Ali.txt
+69.8%
+
+say all
+Perks of Being a Wallflower, The.txt
+98.6%
+
+the words
+Alien Nation.txt
+39.3%
+
+say all
+Precious.txt
+17.4%
+
+the words
+Alien vs. Predator.txt
+16.0%
+
+say all
+Raising Arizona.txt
+64.6%
+
+the words
+All About Eve.txt
+16.7%
+
+say all
+Save the Last Dance.txt
+94.6%
+
+the words
+All About Steve.txt
+2.2%
+
+say all
+There's Something About Mary.txt
+92.8%
+
+the words
+All the King's Men.txt
+1.5%
+
+say all
+Wonder Woman.txt
+80.1%
+
+the words
+All the President's Men.txt
+28.2%
+
+say
+12 Years a Slave.txt
+4.8%
+
+all the words
+Angel Eyes.txt
+81.7%
+
+say
+12.txt
+24.3%
+
+all the words
+Buried.txt
+4.7%
+
+say
+127 Hours.txt
+9.3%
+
+all the words
+Get Out.txt
+87.3%
+
+say
+17 Again.txt
+14.5%
+
+all the words
+His Girl Friday.txt
+70.0%
+
+say
+2001 A Space Odyssey.txt
+33.9%
+
+all the words
+I am Sam.txt
+33.4%
+
+say
+30 Minutes or Less.txt
+10.2%
+
+all the words
+I'll Do Anything.txt
+74.8%
+
+say
+44 Inch Chest.txt
+23.1%
+
+all the words
+Man on the Moon.txt
+35.5%
+
+say
+48 Hrs..txt
+0.6%
+
+all the words
+Misery.txt
+85.1%
+
+say
+50-50.txt
+7.0%
+
+all the words
+Mr Brooks.txt
+77.8%
+
+say
+500 Days of Summer.txt
+5.0%
+
+all the words
+Secret Life of Walter Mitty, The.txt
+88.1%
+

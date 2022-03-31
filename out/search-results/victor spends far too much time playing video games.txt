@@ -1,0 +1,152 @@
+victor
+187.txt
+9.9%
+
+spends far
+Amadeus.txt
+32.9%
+
+too much time
+Antitrust.txt
+21.0%
+
+playing video games
+Adventures of Buckaroo Banzai Across the Eighth Dimension, The.txt
+22.4%
+
+victor
+2001 A Space Odyssey.txt
+0.5%
+
+spends
+30 Minutes or Less.txt
+11.1%
+
+far too much time
+Ed TV.txt
+31.3%
+
+playing video games
+Boyhood.txt
+18.5%
+
+victor
+25th Hour.txt
+35.8%
+
+spends
+50-50.txt
+8.5%
+
+far too much time
+X-Men Origins Wolverine.txt
+82.4%
+
+playing video games
+Coriolanus.txt
+77.8%
+
+victor
+44 Inch Chest.txt
+57.5%
+
+spends
+A Serious Man.txt
+70.7%
+
+far too much
+Awakenings.txt
+21.4%
+
+time playing
+Django Unchained.txt
+35.9%
+
+video games
+17 Again.txt
+47.0%
+
+victor
+Abyss, The.txt
+33.2%
+
+spends
+Ace Ventura Pet Detective.txt
+36.5%
+
+far too much
+Bean.txt
+59.0%
+
+time playing
+Next Friday.txt
+7.4%
+
+video games
+American Sniper.txt
+99.5%
+
+victor
+Airplane.txt
+9.1%
+
+spends
+Adaptation.txt
+37.4%
+
+far too much
+Deadpool.txt
+83.2%
+
+time playing
+Ordinary People.txt
+92.9%
+
+video games
+Arcade.txt
+9.0%
+
+victor
+Alien Nation.txt
+16.6%
+
+spends
+Ali.txt
+15.7%
+
+far too much
+Four Feathers.txt
+16.4%
+
+time playing
+Star Trek Nemesis.txt
+64.1%
+
+video games
+Babel.txt
+17.1%
+
+victor
+Almost Famous.txt
+82.9%
+
+spends
+American Hustle.txt
+21.5%
+
+far too much
+Lord of the Rings Fellowship of the Ring, The.txt
+39.9%
+
+time playing
+Vanilla Sky.txt
+54.5%
+
+video games
+Bamboozled.txt
+68.9%
+
+victor
+Apt Pupil.txt
+27.7%
+
